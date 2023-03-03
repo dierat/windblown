@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  overflow: hidden;
+  min-width: 800px;
+}
+
+.hegassen-scroll-original {
+  width: 650%;
+}
+
+.end-game-button {
+  margin-top: 40px;
 }
 
 .App-logo {
@@ -35,4 +45,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.game-wrapper {
+  width: 100%;
+}
+
+.playing-field {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  background-image: url("Hegassen_scroll_bg.jpg");
+}
+
+.cat-wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.game-menu {
+  width: 100%;
+  height: 160px;
+  border: 2px solid gray;
+  display: flex;
+}
+
+.cat-list {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.cat-list-divider {
+  width: 2px;
+  background-color: gray;
+  height: 100%;
 }
